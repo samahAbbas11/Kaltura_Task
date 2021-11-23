@@ -56,9 +56,10 @@ ______________________________________________
 
 ## In order to build & run:
 
-#### To clone the code:
+#### First you need to clone the code:
 ```
 git clone https://github.com/samahAbbas11/Kaltura_Task.git
+cd Kaltura_Task
 ```
 
 #### To run the deployment:
