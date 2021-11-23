@@ -37,6 +37,11 @@ ______________________________________________
 
 ## In order to build & run:
 
+#### To clone the code:
+```
+git clone https://github.com/samahAbbas11/Kaltura_Task.git
+```
+
 #### To run the deployment:
 ```
 kubectl apply -f deployment.yaml
