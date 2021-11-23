@@ -28,7 +28,28 @@ ______________________________________________
 	  - If you have docker desktop on your computer, enable kubernetes (https://docs.docker.com/desktop/kubernetes/)
 
 2. #### You need to install the nginx ingress-controller:
- 	 - Follow  the instructions in the link : https://kubernetes.github.io/ingress-nginx/deploy/#docker-desktop
+	There are multiple ways to install the NGINX ingress controller: - with Helm, using the project repository chart; - with kubectl apply, using YAML manifests;
+	- if you use minikube:
+		The ingress controller can be installed through minikube's addons system:
+		```
+		minikube addons enable ingress 
+		```
+	- if you use kubernetes of docker desktop:
+		The ingress controller can be installed through :
+		```
+		kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml 
+		```
+		OR with helm (requires Helm version 3) :
+		
+		```
+		helm upgrade --install ingress-nginx ingress-nginx --repo https://kubernetes.github.io/ingress-nginx --namespace ingress-nginx --create-namespace
+ 		 ```
+	
+ 	 (full instructions in the link : https://kubernetes.github.io/ingress-nginx/deploy/#docker-desktop )
+
+______________________________________________
+ 
+ #### * I didn't use minikube, because there is no enough space on my pc to install it . So I used the kubernetes of Docker desktop which is already installed on my computer.
 
 
 ______________________________________________
