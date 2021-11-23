@@ -37,7 +37,7 @@ pipeline {
 		stage('Push') {
 
 			steps {
-			    sh' docker tag kaltura-web samahabbas11/kaltura-nginx'
+			    sh' docker tag kaltura samahabbas11/kaltura-nginx'
 				sh ' docker push samahabbas11/kaltura-nginx'
 			}
 		}
