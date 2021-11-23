@@ -4,4 +4,5 @@ FROM nginx:latest
 # Copy html file from current directory to nginx html directory
 COPY ./index.html /usr/share/nginx/html/index.html
 
+
 EXPOSE 80

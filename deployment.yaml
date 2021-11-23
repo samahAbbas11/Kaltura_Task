@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name:  nginx-deployment
+  namespace: default
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+     app: nginx
+
+  template:
+    metadata:
+      labels:
+        app: nginx
+
+    spec:
+      containers:
+      - name: kaltura-nginx
+        image: samahabbas11/kaltura-nginx:latest # get image from dockerhub
+        ports:
+        - containerPort: 80
+---
+
+# service
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: kaltura-nginx-service
+  namespace: default
+
+spec:
+  type: ClusterIP
+  selector:
+    app: nginx
+  ports:
+  - port: 80
+    targetPort: 80
