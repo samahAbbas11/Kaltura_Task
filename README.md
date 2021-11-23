@@ -21,16 +21,14 @@ ______________________________________________
 
 ## Required:
 
-#### You need to set kubernetes cluster:
+1. #### You need to set kubernetes cluster:
 
-  - You can set minikube (instructions  are in the link : https://minikube.sigs.k8s.io/docs/start/ )
+	  - You can set minikube (instructions  are in the link : https://minikube.sigs.k8s.io/docs/start/ ) , OR...
 
-  OR
+	  - If you have docker desktop on your computer, enable kubernetes (https://docs.docker.com/desktop/kubernetes/)
 
-  - If you have docker desktop on your computer, enable kubernetes (https://docs.docker.com/desktop/kubernetes/)
-
-#### You need to install the nginx ingress-controller:
-  - Follow  the instructions in the link : https://kubernetes.github.io/ingress-nginx/deploy/#docker-desktop
+2. #### You need to install the nginx ingress-controller:
+ 	 - Follow  the instructions in the link : https://kubernetes.github.io/ingress-nginx/deploy/#docker-desktop
 
 
 ______________________________________________
