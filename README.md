@@ -25,7 +25,7 @@ ______________________________________________
 
 	  - You can set minikube (instructions  are in the link : https://minikube.sigs.k8s.io/docs/start/ ) , OR...
 
-	  - If you have docker desktop on your computer, enable kubernetes (https://docs.docker.com/desktop/kubernetes/)
+	  - If you have docker desktop on your computer, enable kubernetes (https://docs.docker.com/desktop/kubernetes/) (Latest versions)
 
 2. #### You need to install the nginx ingress-controller:
 	There are multiple ways to install the NGINX ingress controller: - with Helm, using the project repository chart; - with kubectl apply, using YAML manifests;
